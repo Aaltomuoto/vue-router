@@ -11,25 +11,25 @@ const routes = [
     path: "/brazil",
     name: "brazil",
     component: () =>
-      import( "@/views/BrazilView.vue"),
+      import(/* webpackChunkName: "brazil" */ "@/views/BrazilView.vue"),
   },
   {
     path: "/hawaii",
     name: "hawaii",
     component: () =>
-      import( "@/views/HawaiiView.vue"),
+      import(/* webpackChunkName: "hawaii" */ "@/views/HawaiiView.vue"),
   },
   {
     path: "/jamaica",
     name: "jamaica",
     component: () =>
-      import( "@/views/JamaicaView.vue"),
+      import(/* webpackChunkName: "jamaica" */ "@/views/JamaicaView.vue"),
   },
   {
     path: "/panama",
     name: "panama",
     component: () =>
-      import( "@/views/PanamaView.vue"),
+      import(/* webpackChunkName: "panama" */ "@/views/PanamaView.vue"),
   },
 ];
 
