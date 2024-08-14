@@ -1,12 +1,11 @@
 <style>
 .slide-enter-active,
 .slide-leave-active {
-  transition: opacity 1s, transform 1s;
+  transition: opacity .5s;
 }
 .slide-enter-from,
 .slide-leave-to {
   opacity: 0;
-  transform: translateX(-30%);
 }
 </style>
 <template>
