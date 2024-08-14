@@ -1,5 +1,5 @@
 <template>
-    <section class="destination">
+    <section class="destination" v-if="destination">
         <h1>{{ destination.name }}</h1>
         <div class="destination-details">
             <img :src="`/images/${destination.image}`" :alt="destination.name">
