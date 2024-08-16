@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import sourceData from '@/data.json';
+import { Promise } from "core-js";
  
 const routes = [
   {
@@ -47,6 +48,14 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
+  scrollBehavior (to, from, savedPosition) {
+    let returnValue = savedPosition || {top: 0};
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve(returnValue)
+      }, 500)
+    })
+  },
 });
 
 export default router;
